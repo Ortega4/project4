@@ -18,9 +18,9 @@ const paragraphs = [
 
   "Houston, we have a problem.",
 
-  "SpongeBob, if I had a dollar for every time you annoyed me, I’d retire",
+  "SpongeBob, if I had a dollar for every time you annoyed me, I'd retire",
 
-  "You didn’t just save my life brown eyes, you made my life worth saving."
+  "You didn't just save my life brown eyes, you made my life worth saving."
 ];
 
 // format time
@@ -63,7 +63,8 @@ function displayScores() {
   });
 }
 
-//  event listener, typing logic
+//  event listener, typing 
+
 testArea.addEventListener("input", function() {
   if (!interval) {
     interval = setInterval(function() {
@@ -107,6 +108,9 @@ testArea.addEventListener("input", function() {
 testArea.addEventListener("paste", function(e) {
   e.preventDefault();
 });
+
+
+
 originText.addEventListener("copy", function(e){
   e.preventDefault();
 });
